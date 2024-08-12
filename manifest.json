@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "齁斑自動化狂犬輸入",
+    "version": "1.0.1",
+    "permissions": ["activeTab", "scripting"],
+
+    "content_scripts": [
+        {
+          "matches": ["https://erp.neuter.online/*"],
+          "js": ["content_script_hoban.js"]
+        },
+        {
+          "matches": ["https://www.pet.gov.tw/Admin/B202.aspx"],
+          "js": ["jquery.min.js","content_script_pet.js"]
+        }
+      ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html"
+    }
+  }

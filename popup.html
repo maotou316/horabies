@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AutoFill Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            width: 300px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        .info {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h3>齁斑狂犬病牌證自動填寫器</h3>
+    <button id="getDataButton">1.取得資料</button>
+    <button id="fillFormButton">2.填寫表單</button>
+    
+    <div class="info">
+        <p><strong>Chip:</strong> <span id="chipValue"></span></p>
+        <p><strong>Code:</strong> <span id="codeValue"></span></p>
+        <p><strong>Name:</strong> <span id="nameValue"></span></p>
+        <p><strong>rabies_brand:</strong> <span id="rabies_brand"></span></p>
+        <p><strong>rabies_code:</strong> <span id="rabies_code"></span></p>
+        <p><strong>rabies_date:</strong> <span id="rabies_date"></span></p>
+        <p><strong>rabies_number:</strong> <span id="rabies_number"></span></p>
+        <p><strong>rabies_org:</strong> <span id="rabies_org"></span></p>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
